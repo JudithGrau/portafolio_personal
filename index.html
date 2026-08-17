@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta
         name="description"
         content="Portfolio personal de Judith Grau, Full Stack Developer."
@@ -11,19 +12,35 @@
 
     <title>Judith Grau | Full Stack Developer</title>
 
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <!-- Encabezado y navegación principal del portfolio -->
-    <header>
-        <nav>
-            <a href="#inicio" aria-label="Ir al inicio">
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <a
+                class="brand"
+                href="#inicio"
+                aria-label="Ir al inicio"
+            >
                 Judith Grau
             </a>
 
-            <ul>
+            <ul class="nav-list">
+
                 <li>
                     <a href="#about">Sobre mí</a>
                 </li>
@@ -43,60 +60,95 @@
                 <li>
                     <a href="#contact">Contacto</a>
                 </li>
+
             </ul>
 
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+                class="nav-github"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 GitHub
             </a>
+
         </nav>
+
     </header>
+
 
     <main>
 
         <!-- Hero principal: presenta el perfil profesional y las acciones más relevantes -->
-        <section id="inicio">
+        <section id="inicio" class="hero section">
 
-            <div>
-                <p>HOLA, SOY JUDITH</p>
+            <div class="hero-content">
 
-                <h1>Judith Grau</h1>
+                <p class="eyebrow">
+                    HOLA, SOY JUDITH
+                </p>
 
-                <h2>Full Stack Developer</h2>
+                <h1>
+                    Judith Grau
+                </h1>
 
-                <p>
+                <h2>
+                    Full Stack Developer
+                </h2>
+
+                <p class="hero-description">
                     Desarrollo soluciones web funcionales, intuitivas y orientadas
                     a las necesidades de las personas usuarias, combinando desarrollo,
                     producto y experiencia de usuario.
                 </p>
 
-                <div>
-                    <a href="#projects">
+                <div class="hero-actions">
+
+                    <a
+                        class="btn btn-primary"
+                        href="#projects"
+                    >
                         Ver proyectos
                     </a>
 
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a
+                        class="btn btn-secondary"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         GitHub
                     </a>
+
                 </div>
+
             </div>
 
-            <div>
+
+            <div class="hero-image">
+
                 <img
                     src="img/ju_pcV2.png"
                     alt="Judith Grau, desarrolladora Full Stack"
                 >
+
             </div>
 
         </section>
 
 
         <!-- La sección About reúne la visión profesional y los pilares de trabajo -->
-        <section id="about">
+        <section id="about" class="section">
 
-            <div>
-                <p>PERFIL</p>
+            <div class="section-intro">
 
-                <h2>Desarrollo + Producto + UX</h2>
+                <p class="eyebrow">
+                    PERFIL
+                </p>
+
+                <h2>
+                    Desarrollo + Producto + UX
+                </h2>
 
                 <p>
                     Soy desarrolladora Full Stack con experiencia en desarrollo web
@@ -110,28 +162,53 @@
                     considerar tanto los aspectos funcionales de un producto como
                     las necesidades y la experiencia de las personas usuarias.
                 </p>
+
             </div>
 
-            <div>
 
-                <article>
+            <div class="about-cards">
+
+                <article class="info-card">
+
                     <h3>Frontend</h3>
-                    <p>Interfaces y componentes reutilizables.</p>
+
+                    <p>
+                        Interfaces y componentes reutilizables.
+                    </p>
+
                 </article>
 
-                <article>
+
+                <article class="info-card">
+
                     <h3>Backend</h3>
-                    <p>APIs y desarrollo de servicios.</p>
+
+                    <p>
+                        APIs y desarrollo de servicios.
+                    </p>
+
                 </article>
 
-                <article>
+
+                <article class="info-card">
+
                     <h3>UX/UI</h3>
-                    <p>Diseño centrado en las personas.</p>
+
+                    <p>
+                        Diseño centrado en las personas.
+                    </p>
+
                 </article>
 
-                <article>
+
+                <article class="info-card">
+
                     <h3>Colaboración</h3>
-                    <p>Git, GitHub y equipos multidisciplinarios.</p>
+
+                    <p>
+                        Git, GitHub y equipos multidisciplinarios.
+                    </p>
+
                 </article>
 
             </div>
@@ -140,72 +217,95 @@
 
 
         <!-- La sección Skills agrupa las tecnologías por áreas para facilitar su lectura -->
-        <section id="skills">
+        <section id="skills" class="section section-dark">
 
-            <header>
-                <p>STACK</p>
+            <header class="section-header">
 
-                <h2>Tecnologías y herramientas</h2>
+                <p class="eyebrow">
+                    STACK
+                </p>
+
+                <h2>
+                    Tecnologías y herramientas
+                </h2>
 
                 <p>
                     Un stack construido a través de formación, proyectos
                     colaborativos y experiencia profesional.
                 </p>
+
             </header>
 
-            <div>
 
-                <article>
+            <div class="skills-grid">
+
+                <article class="skill-card">
+
                     <h3>Frontend</h3>
 
-                    <ul>
+                    <ul class="tag-list">
+
                         <li>React</li>
                         <li>TypeScript</li>
                         <li>JavaScript</li>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>Redux Toolkit</li>
+
                     </ul>
+
                 </article>
 
 
-                <article>
+                <article class="skill-card">
+
                     <h3>Backend</h3>
 
-                    <ul>
+                    <ul class="tag-list">
+
                         <li>Java</li>
                         <li>Spring Boot</li>
                         <li>Spring Security</li>
                         <li>PHP</li>
                         <li>Laravel</li>
                         <li>REST APIs</li>
+
                     </ul>
+
                 </article>
 
 
-                <article>
+                <article class="skill-card">
+
                     <h3>Datos &amp; Cloud</h3>
 
-                    <ul>
+                    <ul class="tag-list">
+
                         <li>MySQL</li>
                         <li>SQL</li>
                         <li>AWS</li>
                         <li>Power BI</li>
+
                     </ul>
+
                 </article>
 
 
-                <article>
+                <article class="skill-card">
+
                     <h3>UX/UI &amp; Tools</h3>
 
-                    <ul>
+                    <ul class="tag-list">
+
                         <li>Figma</li>
                         <li>Design Thinking</li>
                         <li>Prototipado</li>
                         <li>Git</li>
                         <li>GitHub</li>
                         <li>Postman</li>
+
                     </ul>
+
                 </article>
 
             </div>
@@ -214,28 +314,39 @@
 
 
         <!-- Los proyectos destacados muestran experiencias concretas y tecnologías utilizadas -->
-        <section id="projects">
+        <section id="projects" class="section">
 
-            <header>
-                <p>TRABAJO DESTACADO</p>
+            <header class="section-header">
 
-                <h2>Proyectos destacados</h2>
+                <p class="eyebrow">
+                    TRABAJO DESTACADO
+                </p>
+
+                <h2>
+                    Proyectos destacados
+                </h2>
 
                 <p>
                     Experiencias en las que transformé requerimientos
                     en soluciones digitales.
                 </p>
+
             </header>
 
 
-            <div>
+            <div class="projects-grid">
 
-                <article>
+                <article class="project-card">
 
-                    <div>
-                        <p>Desarrollo Frontend · Voluntariado</p>
+                    <div class="project-content">
 
-                        <h3>Talento IT</h3>
+                        <p class="project-category">
+                            Desarrollo Frontend · Voluntariado
+                        </p>
+
+                        <h3>
+                            Talento IT
+                        </h3>
 
                         <p>
                             Participación en el desarrollo de la plataforma web
@@ -244,29 +355,42 @@
                             de nuevas secciones y componentes.
                         </p>
 
-                        <ul>
+                        <ul class="tag-list">
+
                             <li>React</li>
                             <li>JavaScript</li>
                             <li>Tailwind CSS</li>
                             <li>Wouter</li>
                             <li>Git</li>
                             <li>GitHub</li>
+
                         </ul>
 
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a
+                            class="project-link"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Ver proyecto
                         </a>
+
                     </div>
 
                 </article>
 
 
-                <article>
+                <article class="project-card">
 
-                    <div>
-                        <p>Desarrollo Full Stack · Proyecto colaborativo</p>
+                    <div class="project-content">
 
-                        <h3>Derecho con Vos</h3>
+                        <p class="project-category">
+                            Desarrollo Full Stack · Proyecto colaborativo
+                        </p>
+
+                        <h3>
+                            Derecho con Vos
+                        </h3>
 
                         <p>
                             Plataforma web educativa desarrollada desde cero
@@ -274,7 +398,8 @@
                             a estudiantes de Derecho.
                         </p>
 
-                        <ul>
+                        <ul class="tag-list">
+
                             <li>React</li>
                             <li>TypeScript</li>
                             <li>Java</li>
@@ -282,22 +407,34 @@
                             <li>MySQL</li>
                             <li>REST APIs</li>
                             <li>Redux Toolkit</li>
+
                         </ul>
 
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a
+                            class="project-link"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Ver proyecto
                         </a>
+
                     </div>
 
                 </article>
 
 
-                <article>
+                <article class="project-card">
 
-                    <div>
-                        <p>Desarrollo Web Full Stack</p>
+                    <div class="project-content">
 
-                        <h3>Gestión Comercial &amp; CRM</h3>
+                        <p class="project-category">
+                            Desarrollo Web Full Stack
+                        </p>
+
+                        <h3>
+                            Gestión Comercial &amp; CRM
+                        </h3>
 
                         <p>
                             Desarrollo de un software de Gestión Comercial y CRM
@@ -305,16 +442,24 @@
                             del negocio.
                         </p>
 
-                        <ul>
+                        <ul class="tag-list">
+
                             <li>PHP</li>
                             <li>Laravel</li>
                             <li>MySQL</li>
                             <li>SQL</li>
+
                         </ul>
 
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a
+                            class="project-link"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Conocer experiencia
                         </a>
+
                     </div>
 
                 </article>
@@ -325,15 +470,22 @@
 
 
         <!-- Sección personal: complementa el perfil técnico con intereses y forma de trabajo -->
-        <section id="more">
+        <section id="more" class="section section-dark">
 
-            <header>
-                <p>MÁS ALLÁ DEL CÓDIGO</p>
+            <header class="section-header">
 
-                <h2>Una mirada integral para construir soluciones.</h2>
+                <p class="eyebrow">
+                    MÁS ALLÁ DEL CÓDIGO
+                </p>
+
+                <h2>
+                    Una mirada integral para construir soluciones.
+                </h2>
+
             </header>
 
-            <div>
+
+            <div class="more-content">
 
                 <p>
                     Me interesa entender no solo cómo funciona una solución,
@@ -350,36 +502,48 @@
             </div>
 
 
-            <div>
+            <div class="more-cards">
 
-                <article>
-                    <h3>Aprendizaje continuo</h3>
+                <article class="info-card">
+
+                    <h3>
+                        Aprendizaje continuo
+                    </h3>
 
                     <p>
                         Actualmente continúo mi formación en Desarrollo de Software
                         y complemento mi recorrido con formación en Backend, Cloud,
                         UX/UI y desarrollo Frontend.
                     </p>
+
                 </article>
 
 
-                <article>
-                    <h3>Trabajo colaborativo</h3>
+                <article class="info-card">
+
+                    <h3>
+                        Trabajo colaborativo
+                    </h3>
 
                     <p>
                         Disfruto trabajar en equipos, compartir conocimientos
                         y transformar requerimientos en funcionalidades concretas.
                     </p>
+
                 </article>
 
 
-                <article>
-                    <h3>Resolver problemas</h3>
+                <article class="info-card">
+
+                    <h3>
+                        Resolver problemas
+                    </h3>
 
                     <p>
                         Me motiva enfrentar desafíos, entender problemas complejos
                         y convertirlos en soluciones claras y funcionales.
                     </p>
+
                 </article>
 
             </div>
@@ -388,20 +552,25 @@
 
 
         <!-- El formulario utiliza labels asociados a cada campo para mejorar la accesibilidad -->
-        <section id="contact">
+        <section id="contact" class="section contact-section">
 
-            <div>
+            <div class="contact-content">
 
-                <p>CONTACTO</p>
+                <p class="eyebrow">
+                    CONTACTO
+                </p>
 
-                <h2>¿Hablamos?</h2>
+                <h2>
+                    ¿Hablamos?
+                </h2>
 
                 <p>
                     Si querés conocer más sobre mi trabajo, compartir una idea
                     o conversar sobre un proyecto, podés escribirme.
                 </p>
 
-                <div>
+                <div class="social-links">
+
                     <a
                         href="#"
                         target="_blank"
@@ -417,16 +586,18 @@
                     >
                         LinkedIn
                     </a>
+
                 </div>
 
             </div>
 
 
-            <div>
+            <div class="contact-form-container">
 
-                <form>
+                <form class="contact-form">
 
-                    <div>
+                    <div class="form-group">
+
                         <label for="nombre">
                             Nombre
                         </label>
@@ -438,10 +609,12 @@
                             placeholder="Tu nombre"
                             required
                         >
+
                     </div>
 
 
-                    <div>
+                    <div class="form-group">
+
                         <label for="email">
                             Email
                         </label>
@@ -453,10 +626,12 @@
                             placeholder="tu@email.com"
                             required
                         >
+
                     </div>
 
 
-                    <div>
+                    <div class="form-group">
+
                         <label for="mensaje">
                             Mensaje
                         </label>
@@ -467,10 +642,14 @@
                             placeholder="Escribí tu mensaje..."
                             required
                         ></textarea>
+
                     </div>
 
 
-                    <button type="submit">
+                    <button
+                        class="btn btn-primary"
+                        type="submit"
+                    >
                         Enviar mensaje
                     </button>
 
@@ -484,9 +663,10 @@
 
 
     <!-- El footer reúne la identidad profesional, navegación y enlaces externos -->
-    <footer>
+    <footer class="site-footer">
 
-        <div>
+        <div class="footer-brand">
+
             <a href="#inicio">
                 Judith Grau
             </a>
@@ -494,10 +674,14 @@
             <p>
                 Full Stack Developer
             </p>
+
         </div>
 
 
-        <nav aria-label="Navegación del pie de página">
+        <nav
+            class="footer-nav"
+            aria-label="Navegación del pie de página"
+        >
 
             <a href="#about">Sobre mí</a>
 
@@ -510,7 +694,7 @@
         </nav>
 
 
-        <div>
+        <div class="footer-social">
 
             <a
                 href="#"
@@ -531,7 +715,7 @@
         </div>
 
 
-        <p>
+        <p class="copyright">
             © 2026 Judith Grau. Portfolio personal.
         </p>
 
