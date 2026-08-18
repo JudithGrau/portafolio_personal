@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+		<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -41,7 +45,8 @@
             rel="noreferrer"
             aria-label="GitHub de Judith Grau"
           >
-            GitHub ↗
+						<span>GitHub ↗</span>
+						<i class="fa-brands fa-github" aria-hidden="true"></i>
           </a>
         </div>
       </header>
@@ -74,8 +79,9 @@
                   href="https://github.com/JudithGrau"
                   target="_blank"
                   rel="noreferrer"
-                  >GitHub ↗</a
-                >
+                  >
+									Ver GitHub ↗
+              	</a>
               </div>
             </div>
 
@@ -108,18 +114,21 @@
             <!-- Los bloques de especialización muestran de forma clara las áreas de trabajo y facilitan la lectura rápida del perfil -->
             <div class="info-cards" aria-label="Áreas de especialización">
               <article class="mini-card">
+								<i class="fa-solid fa-desktop" aria-hidden="true"></i>
                 <h4>Frontend</h4>
                 <p>Interfaces y componentes reutilizables</p>
               </article>
               <article class="mini-card">
-                <h4>Backend</h4>
+								<i class="fa-solid fa-server" aria-hidden="true"></i><h4>Backend</h4>
                 <p>APIs y desarrollo de servicios</p>
               </article>
               <article class="mini-card">
+                <i class="fa-solid fa-user" aria-hidden="true"></i>
                 <h4>UX/UI</h4>
                 <p>Diseño centrado en las personas</p>
               </article>
               <article class="mini-card">
+								<i class="fa-solid fa-users" aria-hidden="true"></i>
                 <h4>Colaboración</h4>
                 <p>Git, GitHub y equipos multidisciplinarios</p>
               </article>
@@ -300,13 +309,14 @@
             <p class="section-kicker center">MÁS ALLÁ DEL CÓDIGO</p>
             <h3 class="section-title">Más allá del código</h3>
             <p class="section-subtitle">Una mirada integral para construir soluciones.</p>
-
-            <p class="more-intro">Me interesa entender no solo cómo funciona una solución, sino también por qué se construye y para quién.</p>
+            <p class="more-intro secondary">Me interesa entender no solo cómo funciona una solución, sino también por qué se construye y para quién.</p>
             <p class="more-intro secondary">Mi recorrido combina desarrollo de software, experiencia de usuario, análisis de datos y comprensión de necesidades de negocio. Esta mirada me permite abordar los proyectos desde distintas perspectivas y seguir aprendiendo de cada desafío.</p>
 
             <div class="process-grid">
               <article class="process-card">
-                <span class="process-number">01</span>
+                <span class="process-icon">
+									<i class="fa-solid fa-book-open" aria-hidden="true"></i>
+								</span>
                 <h4>Aprendizaje continuo</h4>
                 <p>
                   Actualmente continúo mi formación en Desarrollo de Software y complemento mi recorrido con formación en Backend, Cloud, UX/UI y desarrollo Frontend.
@@ -314,7 +324,9 @@
               </article>
 
               <article class="process-card">
-                <span class="process-number">02</span>
+                <span class="process-icon">
+									<i class="fa-solid fa-users" aria-hidden="true"></i>
+								</span>
                 <h4>Trabajo colaborativo</h4>
                 <p>
                   Disfruto trabajar en equipos, compartir conocimientos y transformar requerimientos en funcionalidades concretas.
@@ -322,7 +334,9 @@
               </article>
 
               <article class="process-card">
-                <span class="process-number">03</span>
+                <span class="process-icon">
+										<i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+								</span>
                 <h4>Resolver problemas</h4>
                 <p>
                   Me motiva enfrentar desafíos, entender problemas complejos y convertirlos en soluciones claras y funcionales.
@@ -342,8 +356,14 @@
                 Si querés conocer más sobre mi trabajo, compartir una idea o conversar sobre un proyecto, podés escribirme.
               </p>
               <div class="social-row">
-                <a href="https://github.com/JudithGrau" target="_blank" rel="noreferrer">GitHub ↗</a>
-                <a href="https://www.linkedin.com/in/judithgrau" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+                <a href="https://github.com/JudithGrau" target="_blank" rel="noreferrer">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <span>GitHub ↗</span>
+                </a>
+                <a href="https://www.linkedin.com/in/judithgrau" target="_blank" rel="noreferrer">
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                  <span>LinkedIn ↗</span>
+                </a>
               </div>
             </div>
 
@@ -394,8 +414,10 @@
           <div class="footer-links">
             <h4>Conéctemos</h4>
             <ul>
-              <li><a href="https://github.com/JudithGrau" target="_blank" rel="noreferrer">GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/judithgrau" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/JudithGrau" target="_blank" rel="noreferrer"><i class="fa-brands fa-github brand-mark" aria-hidden="true"></i>
+            </a></li>
+              <li><a href="https://www.linkedin.com/in/judithgrau" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin brand-mark" aria-hidden="true"></i>
+            </a></li>
             </ul>
           </div>
         </div>

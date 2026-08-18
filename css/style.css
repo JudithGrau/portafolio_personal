@@ -13,6 +13,7 @@
   --accent-blue: #5aa8ff;
   --accent-cyan: #55e1ff;
   --accent-purple: #b891ff;
+  --accent-dark-purple: #8a50f7;
   --shadow: 0 24px 60px rgba(3, 13, 28, 0.58);
   --radius: 22px;
   --container: 1180px;
@@ -428,6 +429,9 @@ textarea {
 .field label {
   color: var(--text-soft);
 }
+.mini-card i{
+    color: var(--accent-dark-purple);
+}
 
 .center {
   text-align: center;
@@ -595,10 +599,10 @@ textarea {
   border-color: rgba(120, 160, 255, 0.35);
 }
 
-.process-number {
+.process-icon{
   display: inline-block;
   margin-bottom: 0.9rem;
-  color: var(--accent-purple);
+  color: var(--accent-dark-purple);
   font-weight: 800;
   letter-spacing: 0.05em;
 }
